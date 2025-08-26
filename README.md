@@ -31,15 +31,17 @@ to the file:
 /Makefile
 and modify the SUBLEVEL according your NAS device. My device is 4.4.302+, so I modified to:
 SUBLEVEL = 302+
+ copy config to .config from the folder /synoconfigs
+  cp /synoconfigs/the config of the cpu model of your device(you can login you device with SSH to get the info)
 
-8. unzip your source code and gcc that you downloaded. and set the environment:
+9. unzip your source code and gcc that you downloaded. and set the environment:
 export TOOLCHAIN_PATH=/your gcc path/x86_64-pc-linux-gnu
 export PATH=$TOOLCHAIN_PATH/bin:$PATH
 export CROSS_COMPILE=x86_64-pc-linux-gnu-
 export ARCH=x86_64
 export KSRC=/your source code path/linux-4.4.x
 
-9. run comand to select modules:
+10. run comand to select modules:
 make menuconfig
 select:
 Networking support->(M)RF switch subsystem support
@@ -48,7 +50,7 @@ select all other options that belong to cfg80211 excluding debug options below c
 select:
 Device Drivers->Network device support->Wireless LAN->(M)Realtek 8852B USB WiFi 
 
-10. run make
+11. run make
 
 Note: some source code need to modify but the details I can't recall, I will add it if I recall it in the future. but if your NAS mode is also DS3617xs-72806, your don't need to modify any more and you can also download the ko driver of rtl8852bu directly.
 
