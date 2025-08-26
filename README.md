@@ -1,4 +1,4 @@
-This is a project of RTL8852BU driver for the NAS device RS3617xs-72806 of synology.
+This is a project of RTL8852BU driver for the NAS device DS3617xs-72806 of synology.
 
 1. For Ubuntu 24.04, install dependency packages as below:
 sudo apt update
@@ -50,7 +50,7 @@ Device Drivers->Network device support->Wireless LAN->(M)Realtek 8852B USB WiFi
 
 10. run make
 
-Note: some source code need to modify but the details I can't recall, I will add it if I recall it in the future.
+Note: some source code need to modify but the details I can't recall, I will add it if I recall it in the future. but if your NAS mode is also DS3617xs-72806, your don't need to modify any more and you can also download the ko driver of rtl8852bu directly.
 
 
 
