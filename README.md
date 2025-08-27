@@ -53,6 +53,9 @@ Device Drivers->Network device support->Wireless LAN->(M)Realtek 8852B USB WiFi
 11. run make
 
 Note: some source code need to modify but the details I can't recall, I will add it if I recall it in the future. but if your NAS mode is also DS3617xs-72806, your don't need to modify any more and you can also download the ko driver of rtl8852bu directly.
+you alsi need to download rtl8852bu_fw.bin from https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/rtl_bt
+
+my email:lijack0425@gmail.com
 
 
 
